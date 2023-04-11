@@ -48,4 +48,9 @@ contract MultiplyTest is Test, NonMatchingSelectorHelper {
         );
         assert(!success);
     }
+
+    // forge debug --target-contract MultiplyTest ./test/Multiply.t.sol -s "run()"
+    function run() public {
+        multiply.multiply(0, 3);
+    }
 }
